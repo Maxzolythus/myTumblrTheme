@@ -1,0 +1,214 @@
+body {
+        background-color: #1a1a1a; 
+    }
+    
+    div.bigcontainer { /* Large container that encapsulates the whole page */
+	    width: 100%;
+	    margin:0px;
+	    border: 0;
+	    color: white;
+	    background-color: #1a1a1a;
+	    position:relative;
+	    top:0px; bottom:0; left:0;
+	    line-height: 150%;
+	
+    }
+    
+    div.topbox{
+	    background-color: #5252e0;
+	    background: -webkit-linear-gradient(left top, #4c0080, #1a66ff); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, #4c0080, #1a66ff); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, #4c0080, #1a66ff); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, #4c0080, #1a66ff); /* Standard syntax */
+	    position: relative;
+	    top: 0px;
+	    bottom: 0;
+	    left: 120px;
+	    width: 75%;
+	    height: 100px;
+    }
+    
+    div.sidebox{ /* Sidebar with links */
+        background-color: #00b8e6;
+        color: #333333;
+	    position: fixed;
+	    top: 100px;
+	    bottom: 0;
+	    left: 20px;
+	    width: 150px;
+	    height: 500px;
+	    text-align:center;
+    }
+    
+    div.content{ /* Center box where posts are stored */
+        background-color: #262626;
+        color: #262626;
+        font-family: Arial;
+        position: absolute;
+	    left: 200px;
+	    width: 80%;
+	
+    }
+	
+    h1.name{ /* Title of the blog */
+	    text-align: center;
+	    color: white;
+	    font-size:50px;
+	    font-family: Verdana,sans-serif;
+	    font-variant: small-caps;
+    }
+    
+    
+ 
+    div.box2{ /* Encapsulates the title within the topbox div */
+        top:50px;
+        text-align:center;
+	    position: relative;
+    }
+    
+    div.ask{
+        background-color: #1a1a1a;
+        color: white;
+        padding: 10px;
+    }
+    
+    a{
+        font-family: Verdana,sans-serif;
+        color: #00b8e6;
+    }
+    
+    a.button{ /* Sidebox's link buttons */
+        border: 2px solid #00003D;
+        background-color: #262626;
+        font-family: Arial;
+        text-decoration: none;
+        color: #CCCCCC;
+    }
+    
+    
+    a.button2{ /* Button for pagination */
+        border: 5px solid #00b8e6;
+        background-color: white;
+        font-family: Verdana;
+        font-variant: small-caps;
+        font-size:25px;
+        text-align:center;
+        text-decoration: none;
+        color: #333333;
+    }
+
+    #description{
+        text-align:center;
+        font-family: Arial;
+    }
+    
+    #posts{
+        position: relative;
+	    margin-bottom: 25px;
+    }
+    
+    .tag{
+        color: #AAAAAA;
+        text-decoration: none;
+        font-size:12px;
+    }
+    
+    .tags{
+        opacity: 0;
+        background-color: white;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+    }
+    
+    .tags:hover{
+        opacity: 1;
+    }
+    
+    .text{
+        background-color: white;
+        color: #262626;
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    
+    .link{
+        background-color: white;
+        color: #262626;
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .quote{
+        background-color: white;
+        color: #262626;
+        width: 50%;
+        padding: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .chat{
+        background-color: white;
+        color: #262626;
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .caption{
+        background-color: white;
+        color: #262626;
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    
+    div.hex-container{ /* Holds all of the hexagons */
+        position: fixed;
+        top: 105px;
+        width: 100%;
+	    left: 20%;
+    }
+    
+    .hex:before { /
+        content: " ";
+        width: 0;
+        border-bottom: 30px solid #00b8e6;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+        position: absolute;
+        top: -30px;
+        
+    }
+
+    .hex {
+        margin-top: 60px;
+        width: 104px;
+        height: 60px;
+        background-color: #00b8e6;
+        position: relative;
+        float: left;
+        margin-left: 3px;
+        margin-bottom: -26px;
+    }
+    
+    .hex:after {
+        content: "";
+        width: 0;
+        position: absolute;
+        bottom: -30px;
+        border-top: 30px solid #00b8e6;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+
+    }
+    
+    .hex-row { /* Row of hexagons */
+        clear: left;
+    }
+    .hex-even { /* A modifier to hex-row only applied when the row is even */
+        margin-left: 53px;
+    }
